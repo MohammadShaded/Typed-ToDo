@@ -6,7 +6,7 @@ const generateId = () => Math.random().toString(36).slice(2, 9)
 
 const TodoApp: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([])
-  const [text, setText] = useState<string>('')
+  const [text, setText] = useState('')
 
   const addTodo = () => {
     const trimmed = text.trim()
